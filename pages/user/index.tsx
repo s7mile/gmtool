@@ -8,13 +8,14 @@ import { Container, Grid } from '@mui/material';
 
 import Footer from 'src/components/Footer';
 
-import Search from 'src/content/user/search';
+import Search from '@/content/user/Search';
+import UserInfo from '@/content/user/UserInfo';
 
 const User = () => {
   return (
     <>
       <Head>
-        <title>프렌즈타운 Admin</title>
+        <title>유저 정보 조회 - 프렌즈타운 Admin</title>
       </Head>
       <PageTitleWrapper>
         <PageTitle
@@ -23,8 +24,13 @@ const User = () => {
         />
       </PageTitleWrapper>
       <Container maxWidth="lg">
-        <Grid item xs={12}>
-          <Search />
+        <Grid container spacing={1}>
+          <Grid item xs={12}>
+            <Search />
+          </Grid>
+          <Grid item xs={12}>
+            <UserInfo />
+          </Grid>
         </Grid>
       </Container>
       <Footer />
