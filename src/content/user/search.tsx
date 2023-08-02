@@ -1,13 +1,17 @@
 import { Card, CardContent } from '@mui/material';
 
-import TestUserSelect from './UserForm';
+import SearchForm from './SearchForm';
+import { UserInfoProvider } from '@/contexts/UserInfoContext';
+
 const Search = () => {
   return (
-    <Card>
-      <CardContent>
-        <TestUserSelect />
-      </CardContent>
-    </Card>
+    <UserInfoProvider>
+      <Card>
+        <CardContent>
+          <SearchForm />
+        </CardContent>
+      </Card>
+    </UserInfoProvider>
   );
 };
 

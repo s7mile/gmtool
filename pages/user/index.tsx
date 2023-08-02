@@ -9,7 +9,7 @@ import { Container, Grid } from '@mui/material';
 import Footer from 'src/components/Footer';
 
 import Search from '@/content/user/Search';
-import UserInfo from '@/content/user/UserInfo';
+import SearchResult from '@/content/user/SearchResult';
 
 const User = () => {
   return (
@@ -29,7 +29,7 @@ const User = () => {
             <Search />
           </Grid>
           <Grid item xs={12}>
-            <UserInfo />
+            <SearchResult />
           </Grid>
         </Grid>
       </Container>

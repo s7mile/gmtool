@@ -24,7 +24,7 @@ const ButtonNotify = styled(Button)(
 `
 );
 
-const UserForm = () => {
+const SearchForm = () => {
   const [playerId, setPlayerId] = useState();
 
   const selectChange = (event) => {
@@ -101,4 +101,4 @@ const UserForm = () => {
   );
 };
 
-export default UserForm;
+export default SearchForm;
